@@ -245,7 +245,7 @@ void can_recv_thread() {
   PubMaster pm({"can"});
 
   // run at 100hz
-  const uint64_t dt = 10000000ULL;
+  const uint64_t dt = 5000000ULL;
   uint64_t next_frame_time = nanos_since_boot() + dt;
 
   while (!do_exit && panda->connected) {
